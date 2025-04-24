@@ -8,7 +8,7 @@ import ResponseContext from './contexts/ResponseContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <ResponseContext><App /></ResponseContext>
     </BrowserRouter>
   </StrictMode>,
