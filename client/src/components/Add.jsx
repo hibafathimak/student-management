@@ -3,7 +3,7 @@ import Button from "react-bootstrap/esm/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
-import { addStudentResponseContext } from "../contexts/ContextApi";
+import { addStudentResponseContext } from "../contexts/ResponseContext";
 
 const Add = () => {
   const [show, setShow] = useState(false);

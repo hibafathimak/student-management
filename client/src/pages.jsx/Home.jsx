@@ -4,7 +4,7 @@ import axios from 'axios'
 import Edit from '../components/Edit'
 import { Trash2 } from 'lucide-react'
 import Add from '../components/Add'
-import { addStudentResponseContext, editStudentResponseContext } from '../contexts/ContextApi'
+import { addStudentResponseContext, editStudentResponseContext } from '../contexts/ResponseContext'
 
 
 const Home = () => {
