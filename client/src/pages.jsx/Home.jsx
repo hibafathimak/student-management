@@ -19,7 +19,7 @@ const Home = () => {
     if (token) {
       try {
 
-        const response = await axios.get("http://localhost:3000/all-students", {
+        const response = await axios.get("https://student-management-84vn.onrender.com/all-students", {
           headers: {
              "Authorization":`Bearer ${token}`
           }
@@ -44,7 +44,7 @@ const Home = () => {
   if (confirmDelete) {
     try {
       const token = JSON.parse(sessionStorage.getItem("token"))
-      const response = await axios.delete(`http://localhost:3000/student/delete/${id}`, {
+      const response = await axios.delete(`https://student-management-84vn.onrender.com/student/delete/${id}`, {
         headers: {
           "Authorization": `Bearer ${token}`
         }

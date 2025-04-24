@@ -39,7 +39,7 @@ const Add = () => {
     try {
       const token = JSON.parse(sessionStorage.getItem("token"));
       const response = await axios.post(
-        "http://localhost:3000/student/add",
+        "https://student-management-84vn.onrender.com/student/add",
         { name, age, grade, email },
         {
           headers: {

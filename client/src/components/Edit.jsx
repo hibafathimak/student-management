@@ -33,7 +33,7 @@ function Edit({ student }) {
     try {
         const token = JSON.parse(sessionStorage.getItem("token"));
         const response = await axios.put(
-          `http://localhost:3000/student/edit/${student._id}`,
+          `https://student-management-84vn.onrender.com/edit/${student._id}`,
           { name, age, grade, email },
           {
             headers: {

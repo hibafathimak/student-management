@@ -13,7 +13,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/register', {
+      const response = await axios.post('https://student-management-84vn.onrender.com/register', {
         name,
         email,
         password,
