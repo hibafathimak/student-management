@@ -4,12 +4,11 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
+import { editStudentResponseContext } from "../contexts/ResponseContext";
 
 function Edit({ student }) {
   const [show, setShow] = useState(false);
-  const { editStudentResponse, setEditStudentResponse } = useContext(editStudentResponseContext
-    
-  )
+  const { editStudentResponse, setEditStudentResponse } = useContext(editStudentResponseContext)
   const [name, setName] = useState(student.name);
   const [age, setAge] = useState(student.age);
   const [grade, setGrade] = useState(student.grade);
